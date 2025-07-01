@@ -26,7 +26,10 @@ dependencies:
     # The example app is bundled with the plugin so we use a path dependency on
     # the parent directory to use the current plugin's version.
     path: ../
-#  alipay_kit_ios: #^6.0.0
+  alipay_kit_android_new:
+    path: ../../alipay_kit_android
+
+  #  alipay_kit_ios: #^6.0.0
 #    path: ../../alipay_kit_ios
 
   # The following adds the Cupertino Icons font to your application.
