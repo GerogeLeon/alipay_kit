@@ -77,10 +77,12 @@
         __weak typeof(self) weakSelf = self;
         [[AlipaySDK defaultService] processOrderWithPaymentResult:url
                                                   standbyCallback:^(NSDictionary *resultDic) {
-                                                      __strong typeof(weakSelf) strongSelf = weakSelf;
-                                                      if (strongSelf) {
-                                                          [strongSelf->_channel invokeMethod:@"onPayResp" arguments:resultDic];
-                                                      }
+                                                      dispatch_async(dispatch_get_main_queue(), ^{
+                                                              __strong typeof(weakSelf) strongSelf = weakSelf;
+                                                              if (strongSelf) {
+                                                                  [strongSelf->_channel invokeMethod:@"onPayResp" arguments:resultDic];
+                                                              }
+                                                      });
                                                   }];
 
         // 授权跳转支付宝钱包进行支付，处理支付结果
