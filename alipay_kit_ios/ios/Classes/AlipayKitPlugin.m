@@ -38,11 +38,9 @@
                                dynamicLaunch:dynamicLaunch.boolValue
                                   fromScheme:scheme
                                     callback:^(NSDictionary *resultDic) {
-                                        dispatch_async(dispatch_get_main_queue(), ^{
-                                                __strong typeof(weakSelf) strongSelf = weakSelf;
-                                                if (strongSelf) {
-                                                    [strongSelf->_channel invokeMethod:@"onPayResp" arguments:resultDic];
-                                                }
+                                        dispatch_async(dispatch_get_main_queue(), ^{//确保回调在主线程执行
+                                                __strong typeof(weakSelf) strongSelf = weakSelf;//使用__weak和__strong来避免循环引用
+                                                [strongSelf->_channel invokeMethod:@"onPayResp" arguments:resultDic];
                                             });
                                     }];
         result(nil);
@@ -77,11 +75,9 @@
         __weak typeof(self) weakSelf = self;
         [[AlipaySDK defaultService] processOrderWithPaymentResult:url
                                                   standbyCallback:^(NSDictionary *resultDic) {
-                                                      dispatch_async(dispatch_get_main_queue(), ^{
-                                                              __strong typeof(weakSelf) strongSelf = weakSelf;
-                                                              if (strongSelf) {
-                                                                  [strongSelf->_channel invokeMethod:@"onPayResp" arguments:resultDic];
-                                                              }
+                                                      dispatch_async(dispatch_get_main_queue(), ^{//确保回调在主线程执行
+                                                              __strong typeof(weakSelf) strongSelf = weakSelf;//使用__weak和__strong来避免循环引用
+                                                              [strongSelf->_channel invokeMethod:@"onPayResp" arguments:resultDic];
                                                       });
                                                   }];
 
