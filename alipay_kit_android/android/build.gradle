@@ -5,7 +5,7 @@ java.util.regex.Matcher versionMatcher = java.util.regex.Pattern.compile("^versi
 versionMatcher.find()
 String library_version = versionMatcher.group(1).replaceAll("\\+", "-")
 
-group 'io.github.v7lin.alipay_kit_android'
+group 'io.github.v7lin'
 version library_version
 
 buildscript {
