@@ -1,4 +1,4 @@
-name: alipay_kit
+name: alipay_kit_new
 description: A powerful Flutter plugin allowing developers to auth/pay with natvie Android & iOS Alipay SDKs.
 version: 6.0.0
 homepage: https://github.com/GerogeLeon/alipay_kit
@@ -14,7 +14,7 @@ dependencies:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
 
-  alipay_kit_android: ^6.0.0
+  alipay_kit_android_new: ^6.0.0
 #    path: ../alipay_kit_android
 #  alipay_kit_ios: ^6.0.0
 
@@ -46,7 +46,7 @@ flutter:
   plugin:
     platforms:
       android:
-        default_package: alipay_kit_android
+        default_package: alipay_kit_android_new
       ios:
         default_package: alipay_kit_ios_new
 

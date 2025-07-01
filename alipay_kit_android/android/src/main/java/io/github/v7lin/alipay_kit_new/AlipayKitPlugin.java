@@ -1,4 +1,4 @@
-package io.github.v7lin.alipay_kit;
+package io.github.v7lin.alipay_kit_new;
 
 import android.app.Activity;
 import android.content.Context;

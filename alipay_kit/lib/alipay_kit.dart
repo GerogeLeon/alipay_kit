@@ -1,5 +1,5 @@
 /// alipay_kit
-library alipay_kit;
+library alipay_kit_new;
 
 export 'src/alipay_kit_platform_interface.dart';
 export 'src/constant.dart';
