@@ -1,11 +1,12 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:alipay_kit/src/alipay_kit_platform_interface.dart';
-import 'package:alipay_kit/src/constant.dart';
-import 'package:alipay_kit/src/model/resp.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
+
+import './alipay_kit_platform_interface.dart';
+import './constant.dart';
+import './model/resp.dart';
 
 /// An implementation of [AlipayKitPlatform] that uses method channels.
 class MethodChannelAlipayKit extends AlipayKitPlatform {

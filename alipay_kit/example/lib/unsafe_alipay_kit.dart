@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:alipay_kit/alipay_kit.dart';
 import 'package:alipay_kit_example/crypto/rsa.dart';
+import 'package:alipay_kit_new/alipay_kit.dart';
 
 extension UnsafeAlipayKitPlatform on AlipayKitPlatform {
   static const String SIGNTYPE_RSA = 'RSA';

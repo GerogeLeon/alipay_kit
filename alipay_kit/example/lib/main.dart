@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:alipay_kit/alipay_kit.dart';
 import 'package:alipay_kit_example/unsafe_alipay_kit.dart';
+import 'package:alipay_kit_new/alipay_kit.dart';
 import 'package:flutter/material.dart';
 
 void main() {

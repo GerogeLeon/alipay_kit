@@ -6,7 +6,7 @@
 // For more information about Flutter integration tests, please see
 // https://docs.flutter.dev/cookbook/testing/integration/introduction
 
-import 'package:alipay_kit/alipay_kit.dart';
+import 'package:alipay_kit_new/alipay_kit.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 

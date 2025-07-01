@@ -14,7 +14,7 @@ dependencies:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
 
-  alipay_kit_android_new: ^6.0.0
+  #  alipay_kit_android_new: ^6.0.0
 #    path: ../alipay_kit_android
 #  alipay_kit_ios: ^6.0.0
 

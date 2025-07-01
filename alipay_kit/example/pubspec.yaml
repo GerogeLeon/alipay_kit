@@ -19,7 +19,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  alipay_kit:
+  alipay_kit_new:
     # When depending on this package from a real application you should use:
     #   alipay_kit: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints

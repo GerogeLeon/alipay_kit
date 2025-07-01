@@ -1,4 +1,4 @@
-import 'package:alipay_kit/src/alipay_kit_method_channel.dart';
+import 'package:alipay_kit_new/src/alipay_kit_method_channel.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 

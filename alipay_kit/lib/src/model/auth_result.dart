@@ -1,7 +1,8 @@
 import 'dart:convert';
 
-import 'package:alipay_kit/src/json/jser_converter.dart';
 import 'package:json_annotation/json_annotation.dart';
+
+import '../json/jser_converter.dart';
 
 part 'auth_result.g.dart';
 
