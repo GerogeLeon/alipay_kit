@@ -33,11 +33,17 @@
         NSNumber *dynamicLaunch = call.arguments[@"dynamicLaunch"];
         // NSNumber *isShowLoading = call.arguments[@"isShowLoading"];
         NSString *scheme = ALIPAY_KIT_SCHEME;
+        __weak typeof(self) weakSelf = self;
         [[AlipaySDK defaultService] payOrder:orderInfo
                                dynamicLaunch:dynamicLaunch.boolValue
                                   fromScheme:scheme
                                     callback:^(NSDictionary *resultDic) {
-                                        [self->_channel invokeMethod:@"onPayResp" arguments:resultDic];
+                                        dispatch_async(dispatch_get_main_queue(), ^{
+                                                __strong typeof(weakSelf) strongSelf = weakSelf;
+                                                if (strongSelf) {
+                                                    [strongSelf->_channel invokeMethod:@"onPayResp" arguments:resultDic];
+                                                }
+                                            });
                                     }];
         result(nil);
     } else if ([@"auth" isEqualToString:call.method]) {
@@ -72,7 +78,9 @@
         [[AlipaySDK defaultService] processOrderWithPaymentResult:url
                                                   standbyCallback:^(NSDictionary *resultDic) {
                                                       __strong typeof(weakSelf) strongSelf = weakSelf;
-                                                      [strongSelf->_channel invokeMethod:@"onPayResp" arguments:resultDic];
+                                                      if (strongSelf) {
+                                                          [strongSelf->_channel invokeMethod:@"onPayResp" arguments:resultDic];
+                                                      }
                                                   }];
 
         // 授权跳转支付宝钱包进行支付，处理支付结果
