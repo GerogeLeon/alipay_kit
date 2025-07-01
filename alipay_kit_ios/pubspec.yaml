@@ -1,9 +1,9 @@
-name: alipay_kit_ios
+name: alipay_kit_ios_new
 description: A powerful Flutter plugin allowing developers to auth/pay with natvie Android & iOS Alipay SDKs.
-version: 6.0.1
-homepage: https://github.com/RxReader/alipay_kit/tree/master/alipay_kit
-repository: https://github.com/RxReader/alipay_kit.git
-issue_tracker: https://github.com/RxReader/alipay_kit/issues
+version: 6.0.2
+homepage: https://github.com/GerogeLeon/alipay_kit/tree/master/alipay_kit
+repository: https://github.com/GerogeLeon/alipay_kit.git
+issue_tracker: https://github.com/GerogeLeon/alipay_kit/issues
 
 environment:
   sdk: '>=3.0.2 <4.0.0'

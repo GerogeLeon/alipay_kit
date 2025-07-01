@@ -25,7 +25,7 @@ else
 end
 
 Pod::Spec.new do |s|
-  s.name             = 'alipay_kit_ios'
+  s.name             = 'alipay_kit_ios_new'
   s.version          = library_version
   s.summary          = pubspec['description']
   s.description      = pubspec['description']
