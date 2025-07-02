@@ -1,3 +1,7 @@
+## 6.0.1
+
+use alipay_kit_ios_new: 6.0.2
+
 ## 6.0.0
 
 * Flutter 3.10.2 && Dart 3.0
