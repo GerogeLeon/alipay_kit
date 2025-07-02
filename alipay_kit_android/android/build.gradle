@@ -29,6 +29,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
+    namespace "io.github.v7lin.alipay_kit_android_new"
     compileSdkVersion 31
 
     compileOptions {
