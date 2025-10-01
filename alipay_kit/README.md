@@ -1,3 +1,5 @@
+# 未维护莫用，ios问题未解决
+
 # alipay_kit
 
 [![Pub Package](https://img.shields.io/pub/v/alipay_kit.svg)](https://pub.dev/packages/alipay_kit)
