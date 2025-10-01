@@ -1,3 +1,7 @@
+## 6.0.3
+
+update doc
+
 ## 6.0.1
 
 use alipay_kit_ios_new: 6.0.2
